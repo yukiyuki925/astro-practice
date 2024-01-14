@@ -16,7 +16,7 @@ import myImportedImage from "../image/19008624-8BB1-44A0-BF0E-C2FC30598E48.png";
     </head>
     <body>
       <header>
-        <h1>自己紹介</h1>
+        <h1>Profile</h1>
       </header>
 
       <main>
@@ -25,13 +25,19 @@ import myImportedImage from "../image/19008624-8BB1-44A0-BF0E-C2FC30598E48.png";
             <Image
               src={myImportedImage}
               alt="profile-img"
-              width="200"
-              height="200"
+              width="150"
+              height="150"
               style={{ borderRadius: "50%" }}
             />
           </div>
           <div class="img-detail">
-            <p>熊谷勇希</p>
+            <h3>熊谷勇希</h3>
+            <p>
+              岩手県出身。24歳。<br />
+              2023年7月末で前職を退職し、同年9月からプログラミング学習を開始。<br
+              />
+              HTML/CSS、JavaScriptを中心に学習、現在求職中。
+            </p>
           </div>
         </section>
       </main>
@@ -43,4 +49,25 @@ import myImportedImage from "../image/19008624-8BB1-44A0-BF0E-C2FC30598E48.png";
   </html>
 </Layout>
 
-<style></style>
+<style>
+  p {
+    margin: 0;
+  }
+
+  header h1 {
+    margin: 30px 0;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-detail {
+    margin-left: 50px;
+  }
+</style>

@@ -1,20 +1,21 @@
 ﻿---
 title: optparse でオプションを指定する
+layout: ../../layouts/Layout.astro
 ---
 
-## optparse でオプションを指定する
+# optparse でオプションを指定する
 
-##### **はじめに**
+## **はじめに**
 
 [Ruby](https://d.hatena.ne.jp/keyword/Ruby)のライブラリである optparse について簡単に解説します。
 
-##### **optparse ってなに？**
+## **optparse ってなに？**
 
 [_docs.ruby-lang.org_](https://docs.ruby-lang.org/ja/latest/library/optparse.html)
 
 [コマンドライン](https://d.hatena.ne.jp/keyword/%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3)にオプションを指定できるようになります。[コマンドライン](https://d.hatena.ne.jp/keyword/%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3)に、-m や-a などオプションを指定することにより、出力結果を変化させることができます。
 
-##### **実際の挙動**
+## **実際の挙動**
 
 require 'optparse'
 
@@ -46,6 +47,6 @@ ruby calendar.rb -m 5
 
 このようにターミナルで実行時にオプションとして "-5" など任意の数字をつけることによりその数字に対応した月を表示することができます。
 
-##### **おわりに**
+## **おわりに**
 
 コードの書き方は少しクセがあると個人的には思いますが、optparse をさらに応用すると[スクレイピング](https://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EC%A5%A4%A5%D4%A5%F3%A5%B0)などにも組み込まれたりするみたいなのでかなり便利なライブラリだと思います。使う機会があれば積極的に使っていきたいと思います！
