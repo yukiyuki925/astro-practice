@@ -3,6 +3,8 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import myImportedImage from "../image/19008624-8BB1-44A0-BF0E-C2FC30598E48.png";
+import github from "../image/github (1).png";
+import qiita from "../image/qiita.png";
 ---
 
 <Layout>
@@ -40,40 +42,79 @@ import myImportedImage from "../image/19008624-8BB1-44A0-BF0E-C2FC30598E48.png";
             </p>
           </div>
         </section>
-      </main>
+        <section class="sns">
+          <div class="sns-icon">
+            <nav>
+              <ul>
+                <li>
+                  <h3>GitHub</h3>
+                  <a
+                    href="https://github.com/yukiyuki925"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><Image
+                      src={github}
+                      alt="github-img"
+                      width="100"
+                      height="100"
+                      style={{ margin: 0 }}
+                    /></a
+                  >
+                  <li>
+                    <h3>Qiita</h3>
+                    <a
+                      href="https://qiita.com/yukiyukikun"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={qiita}
+                        alt="github-img"
+                        width="100"
+                        height="100"
+                        style={{ margin: 0 }}
+                      /></a
+                    >
+                  </li>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
 
-      <script>
-        import "../../scripts/menu.js";
-      </script>
+        <script>
+          import "../../scripts/menu.js";
+        </script>
+      </main>
     </body>
   </html>
-</Layout>
 
-<style>
-  p {
-    margin: 0;
-  }
-
-  header h1 {
-    margin: 30px 0;
-  }
-
-  img {
-    margin-top: 30px;
-  }
-
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-
-  .img-detail {
-    margin-left: 50px;
-  }
-
-  @media screen and (max-width: 635px) {
-    .profile {
-      flex-direction: column;
+  <style>
+    p {
+      margin: 0;
     }
-  }
-</style>
+
+    header h1 {
+      margin: 30px 0;
+    }
+
+    img {
+      margin-top: 30px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .img-detail {
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 635px) {
+      .profile {
+        flex-direction: column;
+      }
+    }
+  </style>
+</Layout>
