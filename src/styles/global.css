@@ -41,7 +41,7 @@ h1 {
   left: 48px;
   background-color: #0d0950;
   display: none;
-  margin: 0;
+  margin-bottom: 100px;
 }
 
 .nav-links a {

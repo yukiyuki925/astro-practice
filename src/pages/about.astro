@@ -1,42 +1,66 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-const pageTitle = "僕のブログ";
-const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
-};
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+import { Image } from "astro:assets";
+import cafesite from "../image/887E5343-ECC0-4DEC-B83E-5A1C75776175_1_201_a.png";
+import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg";
 ---
 
 <Layout>
   <html lang="en">
     <head>
       <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width" />
-      <title>{pageTitle}</title>
+      <meta name="generator" content={Astro.generator} />
+      <title>about</title>
     </head>
+    <body>
+      <header>
+        <h2>制作物</h2>
+      </header>
 
-    <h2>Here are a few facts about me:</h2>
-    <ul>
-      <li>My name is {identity.firstName}.</li>
-      <li>
-        I live in {identity.country} and I work as a {identity.occupation}.
-      </li>
-      {
-        identity.hobbies.length >= 2 && (
-          <li>
-            Two of my hobbies are: {identity.hobbies[0]} and{" "}
-            {identity.hobbies[1]}
-          </li>
-        )
-      }
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+      <main>
+        <section class="cafe">
+          <h3>カフェサイト</h3>
+          <Image src={cafesite} alt="cafesite" />
+          <p>
+            使用技術 <br />
+            HTML / CSS
+          </p>
+        </section>
+
+        <hr />
+
+        <section class="gym">
+          <h3>ジムサイト</h3>
+          <Image src={gymsite} alt="gymsite" />
+          <p>
+            使用技術 <br />
+            HTML / CSS / jquery
+          </p>
+        </section>
+      </main>
+    </body>
   </html>
 </Layout>
+
+<style>
+  body {
+    height: 100vh;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+  }
+</style>

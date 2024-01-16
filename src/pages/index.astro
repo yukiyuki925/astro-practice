@@ -14,7 +14,7 @@ import qiita from "../image/qiita.png";
       <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width" />
       <meta name="generator" content={Astro.generator} />
-      <title>Astro</title>
+      <title>index</title>
     </head>
     <body>
       <div class="container">
@@ -93,7 +93,7 @@ import qiita from "../image/qiita.png";
 
   <style>
     .container {
-      margin: 100px 0;
+      margin: 50px 0;
     }
 
     p {
@@ -140,13 +140,14 @@ import qiita from "../image/qiita.png";
     .profile {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
 
     .img-detail {
       margin-left: 50px;
     }
 
-    .sns @media screen and (max-width: 635px) {
+    @media screen and (max-width: 635px) {
       .profile {
         flex-direction: column;
       }
