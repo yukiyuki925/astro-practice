@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { Image } from "astro:assets";
 import cafesite from "../image/887E5343-ECC0-4DEC-B83E-5A1C75776175_1_201_a.png";
 import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg";
+import blog from "../image/AA86EF7A-612F-4C17-9203-F608B548352E_1_201_a.jpeg";
 ---
 
 <Layout>
@@ -23,11 +24,13 @@ import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg"
       <main>
         <section class="cafe">
           <h3>カフェサイト</h3>
+          <a href="https://km-cafesite.netlify.app" target="_blank">URL</a>
           <Image src={cafesite} alt="cafesite" />
           <p>
             使用技術 <br />
             HTML / CSS
           </p>
+          <p>HTML / CSSを使用したシンプルなサイト</p>
         </section>
 
         <hr />
@@ -39,6 +42,27 @@ import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg"
             使用技術 <br />
             HTML / CSS / jquery
           </p>
+          <p>jqueryを使用し、より複雑な動きを取り入れたサイト</p>
+        </section>
+
+        <hr />
+
+        <section class="node">
+          <h3>スクレイピングツール</h3>
+          <a
+            href="https://github.com/yukiyuki925/javascript/tree/main/scroll"
+            target="_blank">ソースコード</a
+          >
+          <Image src={blog} alt="blog" />
+          <p>
+            使用技術 <br />
+            node.js / playwright
+          </p>
+          <p>
+            アイドルのブログから投稿日時、タイトルを自動で収集し、csvファイルに書き込むツール。<br
+            />
+            ブログの更新頻度を効率的に把握する手段として制作。
+          </p>
         </section>
       </main>
     </body>
@@ -46,10 +70,6 @@ import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg"
 </Layout>
 
 <style>
-  body {
-    height: 100vh;
-  }
-
   section {
     margin-bottom: 40px;
   }
@@ -62,5 +82,9 @@ import gymsite from "../image/362638C7-2D90-49DF-8501-CB284732B449_1_201_a.jpeg"
     width: 100%;
     max-height: 400px;
     height: auto;
+  }
+
+  .node {
+    margin-bottom: 40px;
   }
 </style>
