@@ -1,4 +1,12 @@
-# Astro Starter Kit: Basics
+## 概要
+Astroを使用し、速度を重視した個人サイト。プロフィール、制作物、ブログを記載。
+
+## 動作確認方法
+```
+git clone 
+
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
