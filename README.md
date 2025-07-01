@@ -1,10 +1,13 @@
 ## 概要
-Astroを使用し、速度を重視した個人サイト。プロフィール、制作物、ブログを記載。
+
+Astro を使用し、速度を重視した個人サイト。プロフィール、制作物、ブログを記載。
 
 ## 動作確認方法
 
 ```
-git clone git@github.com:yukiyuki925/astro-practice.git
+git clone https://github.com/yukiyuki925/astro-practice.git
+↓
+npm install
 ↓
 npm run dev
 ```
