@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import blog from "../image/AA86EF7A-612F-4C17-9203-F608B548352E_1_201_a.jpeg";
 import astro from "../image/EE950524-C684-494F-B03B-E8EC875535CE.png";
 import com from "../image/8A86F84E-2A16-4953-8BEF-A46DF34F0B82.png";
+import rank from "../image/664600CE-327D-4624-AAD0-96AC34D51FD2.png";
 ---
 
 <Layout>
@@ -73,6 +74,27 @@ import com from "../image/8A86F84E-2A16-4953-8BEF-A46DF34F0B82.png";
             PyAutoGUIを使用し、マウスやキーボード操作を再現することでBotとして検知されるリスクを回避。
           </p>
         </section>
+
+        <hr />
+
+        <section class="rank">
+          <h3>ディズニーアトラクションランキングサイト</h3>
+          <a href="https://rank-app.vercel.app/" target="_blank"
+            >サイトはこちら</a
+          ><br />
+          <Image src={rank} alt="rank" class="rank_img" />
+          <a href="https://github.com/yukiyuki925/rankApp" target="_blank"
+            >ソースコード</a
+          >
+          <p>
+            使用技術 <br />
+            HTML / CSS / Javascript
+          </p>
+          <p>
+            ディズニーのアトラクションのランキングを表示する簡素なサイト。<br />
+            リストの中身を変更することで様々なランキングをクイズ形式で出題可能。（一人帰れま10等）
+          </p>
+        </section>
       </main>
     </body>
   </html>
@@ -106,6 +128,10 @@ import com from "../image/8A86F84E-2A16-4953-8BEF-A46DF34F0B82.png";
   }
 
   .combot_img {
+    border: 1px solid black;
+  }
+
+  .rank_img {
     border: 1px solid black;
   }
 </style>
