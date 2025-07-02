@@ -37,8 +37,8 @@ import qiita from "../image/qiita.png";
               <h3>熊谷勇希</h3>
               <p>
                 岩手県出身、25歳。<br />
-                未経験からエンジニアに転職し、SymfonyやLaravelを使ったPHPの案件に参画。設計から実装・テストなどの工程を経験しました。<br
-                />
+                未経験からエンジニアに転職し、SymfonyやLaravelを使ったPHPの案件に参画。<br
+                />設計から実装・テストなどの工程を経験しました。<br />
                 現在はフロントエンド技術やPythonなどの他言語にも学習の幅を広げており、個人開発も積極的に取り組んでいます。
               </p>
             </div>
@@ -162,9 +162,18 @@ import qiita from "../image/qiita.png";
         margin: 30px 0;
       }
 
-      img {
-        margin-top: 30px;
-        text-align: center;
+      .img {
+        flex-shrink: 0;
+        margin-right: 24px;
+      }
+      .img img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .img-detail {
+        flex: 1;
       }
 
       .sns h3 {
