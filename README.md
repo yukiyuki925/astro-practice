@@ -11,6 +11,8 @@ npm install
 ↓
 npm run dev
 ```
+## URL
+https://silly-biscuit-5236cd.netlify.app/
 
 ## 🚀 Project Structure
 
